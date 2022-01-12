@@ -1,0 +1,31 @@
+﻿
+<h2>Instructors</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>StudentId</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Address</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model.Instructors)
+        {
+            <tr>
+                <th scope="row">@item.InstructorId</th>
+                <td>@item.Name</td>
+                <td>@item.Email</td>
+                <td>@item.Course</td>
+          
+            </tr>
+        }
+
+
+
+    </tbody>
+
+</table>
